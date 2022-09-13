@@ -1,0 +1,47 @@
+<html>
+<head> <style>
+.flag {
+  width: 500px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.italy-flag {
+  width: 100%;
+  padding-bottom: 70%;
+  background-color:white;
+  position: relative;
+  margin: 0;
+}
+
+.italy-flag::before {
+  content: ' ';
+  position: absolute;
+  background-color:green;
+  width: 33.33%;
+  height: 100%;
+}
+
+.italy-flag::after {
+  content: ' ';
+  position: absolute;
+  background-color:red;
+  width: 33.33%;
+  height: 100%;
+  right: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="flag">
+  <section role="region" aria-hidden="true" class="italy-flag">
+  </section>
+</div>
+
+
+</body>
+</html>
